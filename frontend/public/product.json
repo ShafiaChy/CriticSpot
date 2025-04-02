@@ -1,0 +1,115 @@
+[
+    {
+      "name": "Gel Pen",
+      "brand": "Pilot",
+      "image": "https://img.freepik.com/premium-photo/holographic-insulin-pen-blood-drop-icon-with-copy-space-concept-as-futuristic-glossy-photo_980716-662439.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 30,
+      "category": "Writing",
+      "description": "Smooth and vibrant gel pen for everyday writing.",
+      "quantity": 100,
+      "inStock": true
+    },
+    {
+      "name": "Notebook",
+      "brand": "Moleskine",
+      "image": "https://img.freepik.com/premium-photo/office-desk-stationery-black-background_181654-1542.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 120,
+      "category": "Office Supplies",
+      "description": "Premium ruled notebook with a durable hardcover.",
+      "quantity": 50,
+      "inStock": true
+    },
+    {
+      "name": "Watercolor Set",
+      "brand": "Winsor & Newton",
+      "image": "https://img.freepik.com/free-photo/watercolor-paint_144627-20820.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 350,
+      "category": "Art Supplies",
+      "description": "High-quality watercolor paints for artists and hobbyists.",
+      "quantity": 30,
+      "inStock": true
+    },
+    {
+      "name": "Scientific Calculator",
+      "brand": "Casio",
+      "image": "https://img.freepik.com/premium-photo/calculator-with-leather-wallet-yellow_175682-11111.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 500,
+      "category": "Educational",
+      "description": "Advanced scientific calculator for students and professionals.",
+      "quantity": 75,
+      "inStock": true
+    },
+    {
+      "name": "Wireless Keyboard",
+      "brand": "Logitech",
+      "image": "https://img.freepik.com/free-photo/wireless-keyboard-cute-desk_23-2148223215.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 570,
+      "category": "Technology",
+      "description": "Ergonomic wireless keyboard with a long battery life.",
+      "quantity": 20,
+      "inStock": true
+    },
+    {
+      "name": "Fountain Pen",
+      "brand": "Lamy",
+      "image": "https://img.freepik.com/free-photo/3d-rendering-pen-ai-generated_23-2150695473.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 150,
+      "category": "Writing",
+      "description": "Elegant fountain pen for a luxurious writing experience.",
+      "quantity": 40,
+      "inStock": true
+    },
+    {
+      "name": "Desk Organizer",
+      "brand": "Staples",
+      "image": "https://img.freepik.com/premium-photo/green-apple-with-colorful-stationery_392895-286643.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 14.99,
+      "category": "Office Supplies",
+      "description": "Keep your desk tidy with this sleek organizer.",
+      "quantity": 60,
+      "inStock": true
+    },
+    {
+      "name": "Sketchbook",
+      "brand": "Canson",
+      "image": "https://img.freepik.com/premium-photo/creative-space-working-space-artist-shabby-table-paint-gouache-notebook_690432-3014.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 10.99,
+      "category": "Art Supplies",
+      "description": "Durable sketchbook with high-quality paper for drawing.",
+      "quantity": 25,
+      "inStock": true
+    },
+    {
+      "name": "Globe",
+      "brand": "Replogle",
+      "image": "https://img.freepik.com/premium-photo/abstract-sphere-from-credit-cards-as-globe-white-background_476612-4570.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 350,
+      "category": "Educational",
+      "description": "Educational globe with detailed geographical features.",
+      "quantity": 15,
+      "inStock": true
+    },
+    {
+      "name": "Wireless Mouse",
+      "brand": "Microsoft",
+      "image": "https://img.freepik.com/free-photo/party-space-ready-online-celebration_23-2149347281.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 290,
+      "category": "Technology",
+      "description": "Compact and precise wireless mouse for everyday use.",
+      "quantity": 80,
+      "inStock": true
+    },
+    {
+      "name": "Gel Pen",
+      "brand": "Uni-ball",
+      "image": "https://img.freepik.com/free-photo/3d-rendering-pen-ai-generated_23-2150695569.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+      "price": 290,
+      "category": "Writing",
+      "description": "Smooth-writing gel pen with vibrant ink for clear, bold lines.",
+      "quantity": 150,
+      "inStock": true
+    }
+    
+    
+  ]
+  

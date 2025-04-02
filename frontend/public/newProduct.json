@@ -1,0 +1,482 @@
+[
+    {
+        "name": "Gel Pen",
+        "brand": "Pilot",
+        "image": "https://img.freepik.com/premium-photo/holographic-insulin-pen-blood-drop-icon-with-copy-space-concept-as-futuristic-glossy-photo_980716-662439.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 30,
+        "category": "67e2dd3fd6004896d0437951",
+        "description": "Smooth and vibrant gel pen for everyday writing.",
+        "quantity": 100,
+        "inStock": true
+    },
+    {
+        "name": "Notebook",
+        "brand": "Moleskine",
+        "image": "https://img.freepik.com/premium-photo/office-desk-stationery-black-background_181654-1542.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 120,
+        "category": "67e2dd3fd6004896d0437952",
+        "description": "Premium ruled notebook with a durable hardcover.",
+        "quantity": 50,
+        "inStock": true
+    },
+    {
+        "name": "Watercolor Set",
+        "brand": "Winsor & Newton",
+        "image": "https://img.freepik.com/free-photo/watercolor-paint_144627-20820.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 350,
+        "category": "67e2dd3fd6004896d0437953",
+        "description": "High-quality watercolor paints for artists and hobbyists.",
+        "quantity": 30,
+        "inStock": true
+    },
+    {
+        "name": "Scientific Calculator",
+        "brand": "Casio",
+        "image": "https://img.freepik.com/premium-psd/scientific-calculator-front-view-3d-rendering-isolated-transparent-background_808337-23050.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 500,
+        "category": "67e2dd3fd6004896d0437954",
+        "description": "Advanced scientific calculator for students and professionals.",
+        "quantity": 75,
+        "inStock": true
+    },
+    {
+        "name": "Wireless Keyboard",
+        "brand": "Logitech",
+        "image": "https://img.freepik.com/free-photo/wireless-keyboard-cute-desk_23-2148223215.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 570,
+        "category": "67e2dd3fd6004896d0437955",
+        "description": "Ergonomic wireless keyboard with a long battery life.",
+        "quantity": 20,
+        "inStock": true
+    },
+    {
+        "name": "Fountain Pen",
+        "brand": "Lamy",
+        "image": "https://img.freepik.com/free-photo/3d-rendering-pen-ai-generated_23-2150695473.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 150,
+        "category": "67e2dd3fd6004896d0437951",
+        "description": "Elegant fountain pen for a luxurious writing experience.",
+        "quantity": 40,
+        "inStock": true
+    },
+    {
+        "name": "Desk Organizer",
+        "brand": "Staples",
+        "image": "https://img.freepik.com/premium-photo/green-apple-with-colorful-stationery_392895-286643.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 14.99,
+        "category": "67e2dd3fd6004896d0437952",
+        "description": "Keep your desk tidy with this sleek organizer.",
+        "quantity": 60,
+        "inStock": true
+    },
+    {
+        "name": "Sketchbook",
+        "brand": "Canson",
+        "image": "https://img.freepik.com/premium-photo/creative-space-working-space-artist-shabby-table-paint-gouache-notebook_690432-3014.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 10.99,
+        "category": "67e2dd3fd6004896d0437953",
+        "description": "Durable sketchbook with high-quality paper for drawing.",
+        "quantity": 25,
+        "inStock": true
+    },
+    {
+        "name": "Globe",
+        "brand": "Replogle",
+        "image": "https://img.freepik.com/premium-photo/abstract-sphere-from-credit-cards-as-globe-white-background_476612-4570.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 350,
+        "category": "67e2dd3fd6004896d0437954",
+        "description": "Educational globe with detailed geographical features.",
+        "quantity": 15,
+        "inStock": true
+    },
+    {
+        "name": "Wireless Mouse",
+        "brand": "Microsoft",
+        "image": "https://img.freepik.com/free-photo/party-space-ready-online-celebration_23-2149347281.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid",
+        "price": 290,
+        "category": "67e2dd3fd6004896d0437955",
+        "description": "Compact and precise wireless mouse for everyday use.",
+        "quantity": 80,
+        "inStock": true
+    },
+    {
+        "name": "Gel Ink Pen Set",
+        "brand": "Pilot",
+        "image": "https://img.freepik.com/free-photo/3d-rendering-various-pens_23-2150851450.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 150,
+        "category": "67e2dd3fd6004896d0437951",
+        "description": "Smooth writing gel ink pens with quick-dry technology.",
+        "quantity": 120,
+        "inStock": true
+    },
+    {
+        "name": "Mechanical Pencil",
+        "brand": "Pentel",
+        "image": "https://img.freepik.com/premium-photo/sharp-black-mechanical-pencil_769373-4528.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 80,
+        "category": "67e2dd3fd6004896d0437951",
+        "description": "Precision mechanical pencil with an ergonomic grip.",
+        "quantity": 200,
+        "inStock": true
+    },
+    {
+        "name": "Calligraphy Brush Set",
+        "brand": "Tombow",
+        "image": "https://img.freepik.com/premium-vector/japan-calligraphy-set_118813-1130.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 300,
+        "category": "67e2dd3fd6004896d0437951",
+        "description": "A premium calligraphy brush set for elegant handwriting.",
+        "quantity": 90,
+        "inStock": true
+    },
+    {
+        "name": "Stapler Set",
+        "brand": "Swingline",
+        "image": "https://img.freepik.com/premium-photo/high-angle-view-stapler-equipment-against-white-background_1048944-17106078.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 250,
+        "category": "67e2dd3fd6004896d0437952",
+        "description": "Durable stapler with 500 staple refills included.",
+        "quantity": 90,
+        "inStock": true
+    },
+    {
+        "name": "File Organizer",
+        "brand": "OfficeMate",
+        "image": "https://img.freepik.com/premium-vector/wooden-filling-cabinet-with-yellow-folders_149267-1067.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 300,
+        "category": "67e2dd3fd6004896d0437952",
+        "description": "Multi-layer file organizer for efficient office storage.",
+        "quantity": 50,
+        "inStock": true
+    },
+    {
+        "name": "Desk Lamp",
+        "brand": "Philips",
+        "image": "https://img.freepik.com/premium-photo/small-table-lamp-desk-clock-wood-table-night_41451-714.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 1200,
+        "category": "67e2dd3fd6004896d0437952",
+        "description": "LED desk lamp with adjustable brightness.",
+        "quantity": 30,
+        "inStock": true
+    },
+    {
+        "name": "Watercolor Paint Set",
+        "brand": "Winsor & Newton",
+        "image": "https://img.freepik.com/premium-photo/high-angle-view-watercolor-paints-white-background_1048944-23668686.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 600,
+        "category": "67e2dd3fd6004896d0437953",
+        "description": "Professional watercolor paint set with 24 colors.",
+        "quantity": 40,
+        "inStock": true
+    },
+    {
+        "name": "Sketchbook A4",
+        "brand": "Canson",
+        "image": "https://img.freepik.com/free-vector/blank-white-paper-sheet-painter-instruments_1284-13511.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 350,
+        "category": "67e2dd3fd6004896d0437953",
+        "description": "High-quality A4 sketchbook with 120 GSM pages.",
+        "quantity": 100,
+        "inStock": true
+    },
+    {
+        "name": "Acrylic Paint Set",
+        "brand": "Liquitex",
+        "image": "https://img.freepik.com/premium-vector/artistic-set-drawing-tools-brushes-palette-oil-paints_361213-288.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 900,
+        "category": "67e2dd3fd6004896d0437953",
+        "description": "Professional acrylic paint set for artists and students.",
+        "quantity": 60,
+        "inStock": true
+    },
+    {
+        "name": "Calculator",
+        "brand": "Casio",
+        "image": "https://img.freepik.com/premium-psd/calculator-isolated-transparent-background_191095-26531.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 500,
+        "category": "67e2dd3fd6004896d0437954",
+        "description": "Advanced scientific calculator for students and professionals.",
+        "quantity": 75,
+        "inStock": true
+    },
+    {
+        "name": "Mathematics Workbook",
+        "brand": "Oxford",
+        "image": "https://img.freepik.com/free-vector/trigonometry-flyer-template_1284-10156.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 200,
+        "category": "67e2dd3fd6004896d0437954",
+        "description": "Comprehensive workbook for high school students.",
+        "quantity": 150,
+        "inStock": true
+    },
+    {
+        "name": "Globe Model",
+        "brand": "National Geographic",
+        "image": "https://img.freepik.com/premium-photo/globe-isolated-white_78203-1427.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 700,
+        "category": "67e2dd3fd6004896d0437954",
+        "description": "Educational world globe for geography enthusiasts.",
+        "quantity": 40,
+        "inStock": true
+    },
+    {
+        "name": "Wireless Keyboard & Mouse",
+        "brand": "Logitech",
+        "image": "https://img.freepik.com/premium-vector/keyboard-mouse-vector-set-3d-realistic-keyboards-mouse-black-white-colors_572288-1789.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 1500,
+        "category": "67e2dd3fd6004896d0437955",
+        "description": "Ergonomic wireless keyboard and mouse combo.",
+        "quantity": 60,
+        "inStock": true
+    },
+    {
+        "name": "USB Flash Drive 128GB",
+        "brand": "SanDisk",
+        "image": "https://img.freepik.com/premium-photo/usb-flash-drive-color-background-close-up_1048944-25284772.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 800,
+        "category": "67e2dd3fd6004896d0437955",
+        "description": "High-speed USB 3.0 flash drive with 128GB storage.",
+        "quantity": 90,
+        "inStock": true
+    },
+    {
+        "name": "Noise Cancelling Headphones",
+        "brand": "Sony",
+        "image": "https://img.freepik.com/premium-photo/high-angle-view-headphones-rug_1048944-19473752.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 5000,
+        "category": "67e2dd3fd6004896d0437955",
+        "description": "High-quality noise-cancelling headphones for immersive sound.",
+        "quantity": 30,
+        "inStock": true
+    },
+    {
+        "name": "Leather Notebook",
+        "brand": "Moleskine",
+        "image": "https://img.freepik.com/premium-photo/directly-shot-book-with-pen-pink-table_1048944-6120724.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 600,
+        "category": "67e2dd3fd6004896d0437956",
+        "description": "Premium leather-bound notebook for journaling and planning.",
+        "quantity": 70,
+        "inStock": true
+    },
+    {
+        "name": "Sticky Notes Pack",
+        "brand": "3M",
+        "image": "https://img.freepik.com/premium-photo/close-up-adhesive-notes-table_1048944-16637227.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 200,
+        "category": "67e2dd3fd6004896d0437956",
+        "description": "Multi-colored sticky notes for easy reminders.",
+        "quantity": 150,
+        "inStock": true
+    },
+    {
+        "name": "Ballpoint Pen Set",
+        "brand": "BIC",
+        "image": "https://img.freepik.com/premium-vector/set-seven-luxurious-black-red-blue-white-green-gold-business-pens_224528-256.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 180,
+        "category": "67e2dd3fd6004896d0437957",
+        "description": "Smooth and reliable ballpoint pens in assorted colors.",
+        "quantity": 200,
+        "inStock": true
+    },
+    {
+        "name": "Permanent Marker Set",
+        "brand": "Sharpie",
+        "image": "https://img.freepik.com/premium-vector/set-markers-with-highlighter-elements-isolated_404731-2.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 250,
+        "category": "67e2dd3fd6004896d0437958",
+        "description": "Durable permanent markers for bold writing.",
+        "quantity": 100,
+        "inStock": true
+    },
+    {
+        "name": "A4 Printer Paper - 500 Sheets",
+        "brand": "Hammermill",
+        "image": "https://img.freepik.com/premium-photo/close-up_116124-15539.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 450,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "High-quality A4 printer paper, ideal for office and home use.",
+        "quantity": 150,
+        "inStock": true
+    },
+    {
+        "name": "Letter Size Notebook Paper",
+        "brand": "Oxford",
+        "image": "https://img.freepik.com/premium-photo/notebook-paper-background-lined-notebook-paper_322958-2975.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 200,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Loose-leaf ruled paper for school and office needs.",
+        "quantity": 200,
+        "inStock": true
+    },
+    {
+        "name": "Kraft Envelopes - 50 Pack",
+        "brand": "Mead",
+        "image": "https://img.freepik.com/premium-photo/letter-envelope-lavender-wooden-background-copy-space_93675-156559.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 300,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Durable kraft envelopes, perfect for mailing and storage.",
+        "quantity": 120,
+        "inStock": true
+    },
+    {
+        "name": "Glossy Photo Paper - 100 Sheets",
+        "brand": "Canon",
+        "image": "https://img.freepik.com/premium-photo/modern-laser-printer-with-paper-wooden-background_93675-158523.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 600,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "High-gloss photo paper for professional printing results.",
+        "quantity": 80,
+        "inStock": true
+    },
+    {
+        "name": "White Greeting Card Envelopes - 100 Pack",
+        "brand": "Hallmark",
+        "image": "https://img.freepik.com/premium-photo/white-envelope-letters-blue-background_106094-185.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 350,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Premium-quality white envelopes for greeting cards and invitations.",
+        "quantity": 90,
+        "inStock": true
+    },
+    {
+        "name": "Pastel Colored Paper - 200 Sheets",
+        "brand": "Astrobrights",
+        "image": "https://img.freepik.com/premium-photo/high-angle-view-multi-colored-pencils-white-background_1048944-2901974.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 500,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Bright and vibrant pastel-colored paper for crafts and presentations.",
+        "quantity": 130,
+        "inStock": true
+    },
+    {
+        "name": "Legal Size Yellow Notepad - 10 Pack",
+        "brand": "TOPS",
+        "image": "https://img.freepik.com/free-photo/vertical-view-closed-spiral-notebooks-pen-pencil-black_140725-142080.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 250,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Yellow legal pad with ruled pages, ideal for notes and documents.",
+        "quantity": 160,
+        "inStock": true
+    },
+    {
+        "name": "Watercolor Paper Pad - 30 Sheets",
+        "brand": "Canson",
+        "image": "https://img.freepik.com/premium-photo/set-watercolor-paints-paintbrushes-painting_93675-57445.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 700,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Thick, textured watercolor paper for painting and mixed media.",
+        "quantity": 70,
+        "inStock": true
+    },
+    {
+        "name": "A3 Sketching Paper Pad",
+        "brand": "Strathmore",
+        "image": "https://img.freepik.com/premium-photo/white-sheet-paper-with-wax-crayons-magentacolored-background_648777-1358.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 450,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Smooth sketching paper, perfect for pencils, pens, and charcoal.",
+        "quantity": 100,
+        "inStock": true
+    },
+    {
+        "name": "Manila Folders - 100 Pack",
+        "brand": "Smead",
+        "image": "https://img.freepik.com/premium-photo/high-angle-view-multi-colored-pencils-table_1048944-23118670.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 400,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "Standard letter-size manila folders for organizing paperwork.",
+        "quantity": 110,
+        "inStock": true
+    },
+    {
+        "name": "A4 Printer Paper - 500 Sheets",
+        "brand": "Hammermill",
+        "image": "https://img.freepik.com/premium-photo/colorful-art-paper-black-background_392895-548224.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 450,
+        "category": "67e2dd3fd6004896d0437959",
+        "description": "High-quality A4 printer paper, ideal for office and home use.",
+        "quantity": 150,
+        "inStock": true
+      },
+      {
+        "name": "Plastic File Organizer",
+        "brand": "Pendaflex",
+        "image": "https://img.freepik.com/premium-photo/there-is-clear-box-with-bunch-files-it-generative-ai_1034559-72073.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 600,
+        "category": "67e2dd3fd6004896d043795a",
+        "description": "Durable plastic file organizer with multiple compartments.",
+        "quantity": 90,
+        "inStock": true
+      },
+      {
+        "name": "Wireless Keyboard & Mouse Combo",
+        "brand": "Logitech",
+        "image": "https://img.freepik.com/free-photo/wireless-mouse-keyboard_1260-15.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 2500,
+        "category": "67e2dd3fd6004896d0437955",
+        "description": "Sleek wireless keyboard and mouse set with ergonomic design.",
+        "quantity": 50,
+        "inStock": true
+      },
+      {
+        "name": "Permanent Markers - 12 Pack",
+        "brand": "Sharpie",
+        "image": "https://img.freepik.com/premium-photo/close-up-multi-colored-pencils_1048944-17212649.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 350,
+        "category": "67e2dd3fd6004896d0437958",
+        "description": "Bold, fade-resistant permanent markers for versatile use.",
+        "quantity": 120,
+        "inStock": true
+      },
+      {
+        "name": "Math Geometry Set",
+        "brand": "Staedtler",
+        "image": "https://img.freepik.com/premium-photo/set-multicolored-lines-triangles-protractors-caliper-white-wall_170896-591.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 550,
+        "category": "67e2dd3fd6004896d0437954",
+        "description": "Complete geometry set for students and professionals.",
+        "quantity": 60,
+        "inStock": true
+      },
+      {
+        "name": "Office Desk Organizer",
+        "brand": "Mindspace",
+        "image": "https://img.freepik.com/premium-photo/close-up-od-desk-organizer-against-black-background_1048944-2963992.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 1200,
+        "category": "67e2dd3fd6004896d0437952",
+        "description": "Multi-functional desk organizer with compartments for office supplies.",
+        "quantity": 40,
+        "inStock": true
+      },
+      {
+        "name": "Calligraphy Pen Set",
+        "brand": "Parker",
+        "image": "https://img.freepik.com/premium-photo/old-ink-pen-ink-bottle-isolated-white_392895-41881.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 950,
+        "category": "67e2dd3fd6004896d0437951",
+        "description": "Premium calligraphy pen set with ink refills.",
+        "quantity": 75,
+        "inStock": true
+      },
+      {
+        "name": "Acrylic Paint Set - 24 Colors",
+        "brand": "Winsor & Newton",
+        "image": "https://img.freepik.com/premium-photo/directly-shot-colorful-drinking-straws-against-white-background_1048944-14760132.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 1800,
+        "category": "67e2dd3fd6004896d0437953",
+        "description": "High-quality acrylic paint set with vibrant colors.",
+        "quantity": 50,
+        "inStock": true
+      },
+      {
+        "name": "Mechanical Pencil Set - 0.5mm",
+        "brand": "Pentel",
+        "image": "https://img.freepik.com/free-vector/set-vector-sharpened-pencils-various-lengths-with-rubber-sharpener-pencil-shavings_1441-352.jpg?uid=R190206134&ga=GA1.1.1413619384.1729413897&semt=ais_hybrid",
+        "price": 450,
+        "category": "67e2dd3fd6004896d0437957",
+        "description": "Smooth and precise mechanical pencil set with extra leads.",
+        "quantity": 100,
+        "inStock": true
+      }
+  ]  

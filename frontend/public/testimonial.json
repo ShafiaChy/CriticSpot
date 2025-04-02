@@ -1,0 +1,30 @@
+[
+    {
+      "name": "John Doe",
+      "role": "CEO, Tech Solutions",
+      "description": "The service provided exceeded our expectations! The team’s professionalism and timely delivery made all the difference.",
+      "image": "https://example.com/images/john_doe.jpg",
+      "rating": 5,
+      "location": "New York, USA",
+      "date": "2024-01-15"
+    },
+    {
+      "name": "Jane Smith",
+      "role": "Marketing Director, Bright Media",
+      "description": "A fantastic experience! The product quality and customer support were exceptional, and I’ll definitely recommend them.",
+      "image": "https://example.com/images/jane_smith.jpg",
+      "rating": 4.5,
+      "location": "Los Angeles, USA",
+      "date": "2024-01-20"
+    },
+    {
+      "name": "Michael Johnson",
+      "role": "Founder, Green Earth Inc.",
+      "description": "Highly recommend! The team was incredibly dedicated, and they delivered exactly what we needed with great attention to detail.",
+      "image": "https://example.com/images/michael_johnson.jpg",
+      "rating": 5,
+      "location": "San Francisco, USA",
+      "date": "2024-01-18"
+    }
+  ]
+  

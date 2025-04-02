@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primaryColor{
+    color: #fb5770;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sectionTitle {
+    font-size: 25px;
+    text-align: center;
+    color: #3f4343;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.sectionSubtitle {
+    font-size: 16px;
+    color: #3f4343;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.dashboardTitle {
+    font-size: 22px;
+    text-align: center;
+    color: #3f4343;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.dashboardSubtitle {
+    font-size: 12px;
+    color: #3f4343;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 576px) { 
+    .sectionTitle {
+        font-size: 30px;
+    }
+    .sectionSubtitle {
+        font-size: 18px;
+    }
+    .dashboardTitle {
+        font-size: 24px;
+    }
+    .dashboardSubtitle {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionTitle {
+        font-size: 35px;
+    }
+    .sectionSubtitle {
+        font-size: 20px;
+    }
+    .dashboardTitle {
+        font-size: 28px;
+    }
+    .dashboardSubtitle {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sectionTitle {
+        font-size: 40px;
+    }
+    .sectionSubtitle {
+        font-size: 22px;
+    }
+    .dashboardTitle {
+        font-size: 32px;
+    }
+    .dashboardSubtitle {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1280px) { 
+    .sectionTitle {
+        font-size: 45px;
+    }
+    .sectionSubtitle {
+        font-size: 24px;
+    }
+}
+
+@keyframes drop {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+  }
+  
