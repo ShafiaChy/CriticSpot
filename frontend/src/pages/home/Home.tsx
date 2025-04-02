@@ -1,7 +1,6 @@
 import Banner from "@/components/Banner";
 import Blogs from "@/components/Blogs";
 
-import FilterCategoryProducts from "@/components/FilterCategoryProducts";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -17,7 +16,7 @@ const Home = () => {
     <div>
       <Banner />
       <PopularReviews></PopularReviews>
-      <FilterCategoryProducts />
+      
       <AboutUs />
       <Blogs />
     </div>

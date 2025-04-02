@@ -94,14 +94,14 @@
 const AboutUs= () => {
   return (
     <section className="w-full bg-white py-16">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3">
         {/* Left Section - Image with Overlay */}
-        <div className="relative bg-cover bg-center min-h-[400px] flex items-center justify-center px-8"
-          style={{ backgroundImage: "url('/path-to-your-image.jpg')" }}>
+        <div className="relative bg-cover bg-center min-h-[500px] flex items-center justify-center px-8 col-span-2"
+          style={{ backgroundImage: "url('https://themes.envytheme.com/puva/wp-content/uploads/2025/03/banner1-790x700.jpg')" }}>
           <div className="bg-black/50 w-full h-full absolute top-0 left-0"></div>
-          <div className="relative text-white border-2 border-white p-8 text-center max-w-md">
+          <div className="relative text-white border-2 border-white p-8 text-center max-w-xl">
             <h3 className="text-sm font-semibold tracking-wide">ABOUT</h3>
-            <h2 className="text-3xl font-bold my-2">JEWELRY STORE</h2>
+            <h2 className="text-3xl font-bold my-2 uppercase">Critic Spot</h2>
             <p className="text-sm mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio. 
               Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
@@ -112,37 +112,70 @@ const AboutUs= () => {
           </div>
         </div>
 
-        {/* Right Section - Stats */}
-        <div className="bg-black text-white p-10 flex flex-col justify-center space-y-6">
-          <StatItem icon="🏆" value="3500+" label="FEATURED PRODUCTS" />
-          <StatItem icon="📘" value="2000+" label="FACEBOOK FANS" />
-          <StatItem icon="😊" value="2000+" label="HAPPY CUSTOMERS" />
-          <StatItem icon="📍" value="1500+" label="STORES AROUND THE WORLD" />
+        {/* Right Section - Why Trust Our Reviews? */}
+        <div className="bg-gradient-to-b from-gray-900 to-black text-white p-10 flex flex-col justify-center space-y-8 min-h-[700px]">
+          <h2 className="text-3xl font-bold text-center mb-4">Why Trust Our Reviews?</h2>
+          
+          <FeatureItem
+            icon="🔍"
+            title="Expert Analysis"
+            description="Our team thoroughly researches every product to provide accurate and detailed reviews."
+          />
+          <FeatureItem
+            icon="📝"
+            title="User-Generated Ratings"
+            description="Real customer feedback and ratings help you make the best choice."
+          />
+          <FeatureItem
+            icon="📊"
+            title="Data-Driven Comparisons"
+            description="We compare features, performance, and pricing so you don’t have to."
+          />
+
+          {/* Trust Ratings */}
+          <div className="text-center mt-6">
+            <h3 className="text-xl font-semibold">Trusted by 50,000+ Users</h3>
+         
+           
+          </div>
+
+          {/* Featured Review */}
+          <div className="bg-gray-800 p-5 rounded-lg shadow-lg text-center">
+            <h3 className="text-lg font-semibold">Featured Review</h3>
+            <p className="text-sm text-gray-300 mt-2">
+              "The best product review platform! Helped me find the perfect laptop for my work."
+            </p>
+            <p className="text-xs text-gray-400 mt-1">— Jane Doe, Verified Buyer</p>
+          </div>
+
+          
+         
         </div>
       </div>
+      
     </section>
   );
 };
 
 // Reusable stat item component
-interface StatItemProps {
-  icon: string;
-  value: string;
-  label: string;
-}
-
-const StatItem: React.FC<StatItemProps> = ({ icon, value, label }) => {
-  return (
-    <div className="flex items-center space-x-4">
-      <div className="w-12 h-12 flex items-center justify-center bg-white text-black rounded-full text-xl">
-        {icon}
+interface FeatureItemProps {
+    icon: string;
+    title: string;
+    description: string;
+  }
+  
+  const FeatureItem: React.FC<FeatureItemProps> = ({ icon, title, description }) => {
+    return (
+      <div className="flex items-center space-x-4">
+        <div className="w-14 h-14 flex items-center justify-center  text-black rounded-full text-2xl">
+          {icon}
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold">{title}</h3>
+          <p className="text-sm text-gray-400">{description}</p>
+        </div>
       </div>
-      <div>
-        <h3 className="text-2xl font-bold">{value}</h3>
-        <p className="text-sm text-gray-400">{label}</p>
-      </div>
-    </div>
-  );
-};
+    );
+  };
 
 export default AboutUs;
