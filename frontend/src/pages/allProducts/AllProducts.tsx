@@ -29,7 +29,7 @@ const AllProducts = () => {
     }, []); 
 
     // Fetch products with dynamic page and category filters
-    const { data: stationeryProducts, isLoading: isProductsLoading } = useGetAllProductsQuery([
+    const { data: ProductReviews, isLoading: isProductsLoading } = useGetAllProductsQuery([
         { name: 'category', value: category },
         { name: 'brand', value: brand },
         { name: 'maxPrice', value: maxPrice },
@@ -57,7 +57,7 @@ const AllProducts = () => {
                     <FilterSidebar />
                 </div>
                 {
-                    (stationeryProducts?.data?.length ?? 0) > 0 ? <div className="mt-8 md:w-4/5 md:mt-0">
+                    (ProductReviews?.data?.length ?? 0) > 0 ? <div className="mt-8 md:w-4/5 md:mt-0">
                         <div className="grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4 md:grid-cols-2 xl:grid-cols-4">
                             {isProductsLoading
                                 ? [...Array(12)].map((_, index) => (
@@ -75,14 +75,14 @@ const AllProducts = () => {
                                         </div>
                                     </div>
                                 ))
-                                : stationeryProducts?.data?.map((product: TProduct) => (
+                                : ProductReviews?.data?.map((product: TProduct) => (
                                     <ProductCart product={product} key={product?._id} />
                                 ))
                             }
                         </div>
 
                         {/* Pagination */}
-                        <ProductPagination totalPage={stationeryProducts?.meta?.totalPage || 1} />
+                        <ProductPagination totalPage={ProductReviews?.meta?.totalPage || 1} />
                     </div> : <div className="w-1/2 mx-auto mt-16">
                         <h2 className="text-2xl font-bold text-center">No Product Found</h2>
                     </div>

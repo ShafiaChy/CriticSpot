@@ -20,7 +20,7 @@ const GetAllProducts = () => {
     const queryParams = useQueryParams();
     const currentPage = queryParams.get('page') || '1'; 
     const limit = '12';
-    const { data: stationeryProducts, isLoading } = useGetAllProductsQuery(
+    const { data: ProductReviews, isLoading } = useGetAllProductsQuery(
         [
             { name: 'page', value: currentPage },
             { name: 'limit', value: limit }
@@ -80,7 +80,7 @@ const GetAllProducts = () => {
                     </TableRow>
                 </TableHeader>
 
-                {stationeryProducts?.data?.map(product => (
+                {ProductReviews?.data?.map(product => (
                     <TableBody key={product?._id}>
                         <TableRow>
                             <TableCell >
@@ -141,7 +141,7 @@ const GetAllProducts = () => {
                 ))}
             </Table>
 
-            <ProductPagination totalPage={stationeryProducts?.meta?.totalPage || 1} />
+            <ProductPagination totalPage={ProductReviews?.meta?.totalPage || 1} />
         </div>
     );
 };

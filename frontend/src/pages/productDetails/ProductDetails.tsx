@@ -16,7 +16,7 @@ const ProductDetails = () => {
     const [addToCartProduct] = useAddToCartProductMutation();
     const [addToFavoriteProduct] = useAddToFavoriteProductMutation();
     const location = useLocation();
-    const { data: stationeryProduct, isLoading, isError } = useGetSingleProductQuery({
+    const { data: ProductReview, isLoading, isError } = useGetSingleProductQuery({
         productId: id
     })
 
@@ -34,10 +34,10 @@ const ProductDetails = () => {
 
     }
 
-    if (isError || !stationeryProduct?.data) {
+    if (isError || !ProductReview?.data) {
         return <p>Error fetching product details. Please try again later.</p>;
     }
-    const { _id, name, brand, category, image, price, inStock, description, quantity } = stationeryProduct?.data as TProduct
+    const { _id, name, brand, category, image, price, inStock, description, quantity } = ProductReview?.data as TProduct
     const relatedProducts = products?.data?.filter((product: TProduct) => product?.category?.name === category?.name)
 
     const handleAddToCart = async (e: React.MouseEvent) => {

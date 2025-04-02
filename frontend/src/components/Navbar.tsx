@@ -116,10 +116,11 @@ const Navbar = () => {
           {/* Logo */}
           <Link to={"/"} className="flex items-center">
             <img
-              className="w-[100px] h-[60px] object-cover"
-              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/615476e378a1a8001de58b7f/0x0.png"
+              className="w-[50px] h-[50px] object-cover"
+              src="https://i.ibb.co.com/DPp2Kx4V/pro-logo.png"
               alt="Logo"
             />
+            <h1 className="text-2xl font-criticspot">CriticSpot</h1>
           </Link>
 
           {/* Navigation Items */}

@@ -50,7 +50,10 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+		  fontFamily: {
+			criticspot: ["Poppins", "sans-serif"], // Custom font
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],

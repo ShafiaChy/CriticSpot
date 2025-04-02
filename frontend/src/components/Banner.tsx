@@ -77,36 +77,7 @@ const Banner = () => {
 
                 </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 p-4 my-16 md:gap-4 lg:grid-cols-4">
-                <div  className="items-center justify-center gap-4 border-r-2 md:flex">
-                    <img data-aos="zoom-out-up" className="w-8 mx-auto xl:mx-0 lg:mx-auto md:mx-0 md:w-16" src="https://cdn-icons-png.freepik.com/256/3806/3806012.png?ga=GA1.1.2122364497.1742731770&semt=ais_hybrid" alt="" />
-                    <div data-aos="fade-right" className="text-center md:text-start">
-                        <h2 className="text-gray-700 md:font-bold md:text-lg">Fast delivery</h2>
-                        <p className="md:text-[16px] text-sm">For all orders over $120</p>
-                    </div>
-                </div>
-                <div  className="items-center justify-center gap-4 md:flex lg:border-r-2">
-                    <img data-aos="zoom-out-up" className="w-8 mx-auto xl:mx-0 lg:mx-auto md:mx-0 md:w-16" src="https://cdn-icons-png.freepik.com/256/2059/2059129.png?ga=GA1.1.2122364497.1742731770&semt=ais_hybrid" alt="" />
-                    <div data-aos="fade-right" className="text-center md:text-start">
-                        <h2 className="text-gray-700 md:font-bold md:text-lg">Safe Payments</h2>
-                        <p className="md:text-[16px] text-sm">100% secure payment</p>
-                    </div>
-                </div>
-                <div  className="items-center justify-center gap-4 border-r-2 md:flex">
-                    <img data-aos="zoom-out-up" className="w-8 mx-auto xl:mx-0 lg:mx-auto md:mx-0 md:w-16" src="https://cdn-icons-png.freepik.com/256/2229/2229248.png?ga=GA1.1.2122364497.1742731770&semt=ais_hybrid" alt="" />
-                    <div data-aos="fade-right" className="text-center md:text-start">
-                        <h2 className="text-gray-700 md:font-bold md:text-lg"> Discount Coupons</h2>
-                        <p className="md:text-[16px] text-sm">Enjoy Huge Promotions</p>
-                    </div>
-                </div>
-                <div  className="items-center justify-center gap-4 md:flex">
-                    <img data-aos="zoom-out-up" className="w-8 mx-auto xl:mx-0 lg:mx-auto md:mx-0 md:w-16" src="https://cdn-icons-png.freepik.com/256/4961/4961759.png?ga=GA1.1.2122364497.1742731770&semt=ais_hybrid" alt="" />
-                    <div data-aos="fade-right" className="text-center md:text-start">
-                        <h2 className="text-gray-700 md:font-bold md:text-lg">Quality Support</h2>
-                        <p className="md:text-[16px] text-sm">Dedicated 24/7 support</p>
-                    </div>
-                </div>
-            </div>
+          
         </div>
     )
 }

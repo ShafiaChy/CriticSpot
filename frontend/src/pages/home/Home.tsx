@@ -1,11 +1,13 @@
 import Banner from "@/components/Banner";
 import Blogs from "@/components/Blogs";
-import FeaturedProducts from "@/components/FeaturedProducts";
+
 import FilterCategoryProducts from "@/components/FilterCategoryProducts";
-import WritingProducts from "@/components/WritingProducts";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PopularReviews from "@/components/PopularReviews";
+import AboutUs from "@/components/AboutUs";
 
 const Home = () => {
   useEffect(() => {
@@ -14,9 +16,9 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <FeaturedProducts />
+      <PopularReviews></PopularReviews>
       <FilterCategoryProducts />
-      <WritingProducts />
+      <AboutUs />
       <Blogs />
     </div>
   );

@@ -8,7 +8,7 @@ import { useGetAllCategoryQuery } from "@/redux/features/category/categoryManage
 
 const AdminDashboard = () => {
     // Fetching the data for products and users
-    const { data: stationeryProducts, isLoading: isLoadingProducts } = useGetAllProductsQuery(undefined);
+    const { data: ProductReviews, isLoading: isLoadingProducts } = useGetAllProductsQuery(undefined);
     const { data: userData, isLoading: isLoadingUsers } = useGetAllUserQuery({});
     const { data: orders } = useGetOrdersQuery({})
     const { data: categories } = useGetAllCategoryQuery(undefined)
@@ -24,7 +24,7 @@ const AdminDashboard = () => {
     }
 
     const barChartData = [
-        { browser: "products", history: stationeryProducts?.data?.length, fill: "#2eb88a" },
+        { browser: "products", history: ProductReviews?.data?.length, fill: "#2eb88a" },
         { browser: "users", history: userData?.data?.length, fill: "#e23670" },
         { browser: "user", history: users?.length, fill: "#e88c30" },
         { browser: "admin", history: admins?.length, fill: "#af57db" },
@@ -137,7 +137,7 @@ const AdminDashboard = () => {
                                 />
                             </svg>
                         </div>
-                        <span className="text-3xl font-bold text-white">{stationeryProducts?.data?.length}+</span>
+                        <span className="text-3xl font-bold text-white">{ProductReviews?.data?.length}+</span>
                     </div>
                     <p className="text-lg font-bold text-white">Total Products</p>
                 </div>
