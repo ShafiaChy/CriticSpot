@@ -33,7 +33,7 @@ A full-stack application where users can sign up, log in, create and read produc
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used Are
 
 ### Frontend
 
