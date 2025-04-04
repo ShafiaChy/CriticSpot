@@ -37,14 +37,14 @@ A full-stack application where users can sign up, log in, create and read produc
 
 ## 🛠️ Technologies Used Are
 
-### Frontend
+### Frontend:
 
 - ⚛️ **React.js**
 - 📦 **Redux Toolkit**
 - 🎨 **Tailwind CSS**
 - 💡 **TypeScript**
 
-### Backend
+### Backend:
 
 - 🌐 **Node.js**
 - 🚂 **Express.js**
