@@ -1,25 +1,20 @@
 import { Router } from "express";
-import { stationeryProductRouter } from "../module/stationery-products/stationeryProduct.route";
+
 import { userRouter } from "../module/user/user.route";
 import { AuthRouter } from "../module/auth/auth.route";
-import { orderRouter } from "../module/orders/order.route";
-import { addedCartRouter } from "../module/addedCart/addedCart.route";
 import { categoryRouter } from "../module/category/category.route";
-import { favoriteRouter } from "../module/addedFavorite/addedFavorite.route";
 import { blogsRouter } from "../module/blog/blog.route";
+import { ProductReviewRouter } from "../module/product-review/productReview.route";
 
 
 const router = Router()
 
 const moduleRoutes = [
     {
-        path: '/products',
-        route: stationeryProductRouter
+        path: '/reviews',
+        route: ProductReviewRouter
     },
-    {
-        path: '/orders',
-        route: orderRouter
-    },
+   
     {
         path: '/users',
         route: userRouter
@@ -28,14 +23,8 @@ const moduleRoutes = [
         path: '/auth',
         route: AuthRouter
     },
-    {
-        path: '/addedCarts',
-        route: addedCartRouter
-    },
-    {
-        path: '/addedFavorites',
-        route: favoriteRouter
-    },
+   
+    
     {
         path: '/categories',
         route: categoryRouter

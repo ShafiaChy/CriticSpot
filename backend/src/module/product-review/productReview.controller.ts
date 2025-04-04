@@ -1,28 +1,35 @@
 import { RequestHandler } from 'express';
-import { StationeryProductServices } from './stationeryProduct.service';
+
 import catchAsync from '../../utils/catchAsync';
+import { ProductReviewServices } from './productReview.service';
 
 
 
 
 // stationery product create product controller
-const createProduct = catchAsync(async (req, res) => {
+const CreateReview = catchAsync(async (req, res) => {
   const product = req.body;
-  const result = await StationeryProductServices.createProductIntoDB(product);
+  const result = await ProductReviewServices.CreateReviewIntoDB(product);
+
   res.status(200).json({
     message: 'Product created successfully',
+  
     success: true,
     data: result,
+  
   })
 })
 
 // get all products
-const getAllProducts = catchAsync(async (req, res) => {
-  const result = await StationeryProductServices.getAllProductsFromDB(req.query);
+const getAllReviews = catchAsync(async (req, res) => {
+ 
+  const result = await ProductReviewServices.getAllReviewsFromDB(req.query);
+ 
   res.status(200).json({
-    message: 'Products are retrieved successfully',
-    success: true,
+    message: 'Reviews are retrieved successfully',
     meta: result.meta,
+    success: true,
+
     data: result.result,
   })
 });
@@ -34,9 +41,9 @@ const getAllProducts = catchAsync(async (req, res) => {
 const getSpecifProduct = catchAsync(async (req, res) => {
   const { productId } = req.params;
   const result =
-    await StationeryProductServices.getSpecifProductFromDB(productId);
+    await ProductReviewServices.getSpecifProductFromDB(productId);
   res.status(200).json({
-    message: 'Products retrieved successfully',
+    message: 'Reviews retrieved successfully',
     success: true,
     data: result,
   })
@@ -61,12 +68,12 @@ const updateProduct = catchAsync(async (req, res) => {
       },
     });
   } else {
-    const result = await StationeryProductServices.updateProductFromDB(
+    const result = await ProductReviewServices.updateProductFromDB(
       productId,
       data,
     );
     res.status(200).json({
-      message: 'Product updated successfully',
+      message: 'Reviews updated successfully',
       success: true,
       data: result,
     });
@@ -77,18 +84,18 @@ const updateProduct = catchAsync(async (req, res) => {
 // delete product
 const deleteProduct: RequestHandler = catchAsync(async (req, res) => {
   const { productId } = req.params;
-  await StationeryProductServices.deleteProductFromDB(productId);
+  await ProductReviewServices.deleteProductFromDB(productId);
   res.status(200).json({
-    message: 'Product deleted successfully',
+    message: 'Reviews deleted successfully',
     success: true,
     data: {},
   })
 });
 
-export const StationeryProductControllers = {
-  createProduct,
+export const ProductReviewControllers = {
+  CreateReview,
   getSpecifProduct,
-  getAllProducts,
+  getAllReviews,
   updateProduct,
   deleteProduct,
 };

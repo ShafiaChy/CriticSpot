@@ -24,6 +24,7 @@ const getAllBlogFromDB = async (query: Record<string, unknown>) => {
         .fields();
     const result = await blogQuery.modelQuery;
     const meta = await blogQuery.countTotal();
+    console.log("hi",result)
     return {
         result,
         meta,
