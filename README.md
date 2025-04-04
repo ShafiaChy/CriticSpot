@@ -28,7 +28,7 @@ A full-stack application where users can sign up, log in, create and read produc
 ![Navbar ](https://i.ibb.co.com/67WMpk9p/Screenshot-1.png)
 
 ### 📝 Review Page
-![Review Page](https://i.ibb.co.com/v4v8xWrL/screencapture-localhost-5173-all-Reviews-2025-04-05-00-21-56.png)
+![Review Page](https://i.ibb.co.com/rR28MqQq/screencapture-localhost-5173-all-Reviews-2025-04-05-00-21-56.png)
 
 ### 🔍 Dashboard
 ![Create Review](https://i.ibb.co.com/4wK88tjK/screencapture-localhost-5173-dashboard-user-Create-Review-2025-04-05-00-25-31.png)
