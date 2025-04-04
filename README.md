@@ -20,7 +20,9 @@ A full-stack application where users can sign up, log in, create and read produc
 > ✨ Add screenshots here to give a visual overview of the site
 
 ### 🏠 Home Page
-![Home Page](https://i.ibb.co.com/WNvsXF61/screencapture-localhost-5173-2025-04-05-00-19-50.png)
+![Home Page](https://i.ibb.co.com/8L0D5H3K/screencapture-localhost-5173-2025-04-05-00-19-50.png)
+![Home Page](https://i.ibb.co.com/fdwZ0BRQ/screencapture-localhost-5173-2025-04-05-00-19-501.png)
+![Home Page](https://i.ibb.co.com/TM1sdwtp/screencapture-localhost-5173-2025-04-05-00-19-503.png)
 
 ### 🏠 Navbar
 ![Navbar ](https://i.ibb.co.com/67WMpk9p/Screenshot-1.png)
