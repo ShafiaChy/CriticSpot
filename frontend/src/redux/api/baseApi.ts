@@ -6,11 +6,11 @@ import { toast } from 'sonner';
 
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://stationery-shop-blond.vercel.app/api/v1',
     // baseUrl: 'http://localhost:5000/api/v1',
+    baseUrl: 'https://critic-spot-backend.vercel.app/api/v1',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
-        const token = (getState() as RootState).auth.token;
+        const token = (getState() as RootState).auth?.token;
         if (token) {
             headers.set('authorization', `${token}`)
         }
@@ -35,7 +35,7 @@ const baseQueryWithRefreshToken: BaseQueryFn<
     }
 
     if (result?.error?.status === 401) {
-        const res = await fetch('https://stationery-shop-blond.vercel.app/api/v1/auth/refresh-token', {
+        const res = await fetch('https://critic-spot-backend.vercel.app/api/v1/auth/refresh-token', {
             method: 'POST',
             credentials: 'include',
         });
@@ -64,7 +64,7 @@ const baseQueryWithRefreshToken: BaseQueryFn<
 export const baseApi = createApi({
     reducerPath: 'baseApi',
     baseQuery: baseQueryWithRefreshToken,
-    tagTypes: ['product', 'user', 'addedCart', 'order', 'category', 'addedFavorite', 'blog'],
+    tagTypes: ['review', 'user', 'category', 'addedFavorite', 'blog'],
     endpoints: () => ({}),
 
 })

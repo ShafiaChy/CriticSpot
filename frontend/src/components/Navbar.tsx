@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { MdOutlineMenu } from "react-icons/md";
@@ -6,11 +7,8 @@ import OutlineButton from "./customButton/OutlineButton";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { logout, selectCurrentToken } from "@/redux/features/auth/authSlice";
 import { verifyToken } from "@/utils/verifyToken";
-import { TCategory, TProduct, TUser } from "@/types";
+import { TCategory, TUser } from "@/types";
 import { toast } from "sonner";
-import { useGetAddedCartQuery } from "@/redux/features/product/addedCartManagementApi";
-import Loading from "./loading/Loading";
-import { useGetAddedFavoriteQuery } from "@/redux/features/product/addedFavoriteManagementApi";
 import { useGetAllUserQuery } from "@/redux/features/user/userManagementApi";
 import {
   DropdownMenu,
@@ -22,7 +20,9 @@ import {
 import { motion } from "motion/react"
 import { FiChevronDown } from "react-icons/fi";
 import { useGetAllCategoryQuery } from "@/redux/features/category/categoryManagementApi";
-import { useGetAllProductsQuery } from "@/redux/features/product/productManagementApi";
+import { useGetAllReviewsQuery } from "@/redux/features/review/reviewManagementApi";
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,22 +33,15 @@ const Navbar = () => {
   const navigate = useNavigate();
   const token = useAppSelector(selectCurrentToken);
   const { data: categories } = useGetAllCategoryQuery(undefined)
-  const { data: products } = useGetAllProductsQuery(undefined)
+  const { data: products } = useGetAllReviewsQuery(undefined)
   let user;
   if (token) {
     user = verifyToken(token)
   }
 
-  const { data: addedCartProduct, isLoading: addedCartLoading } = useGetAddedCartQuery(((user as TUser)?.email));
-  const { data: addedFavorite, isLoading: addedFavoriteLoading } = useGetAddedFavoriteQuery(((user as TUser)?.email));
-  const totalAddedCart = addedCartProduct?.data?.map((item: any) => item.products?.length)[0]
   const { data: currentUser } = useGetAllUserQuery({ email: (user as TUser)?.email })
 
-  // console.log(addedCartProduct?.data?.map((item : any)  => item.product.length)[0]);
-  if (addedCartLoading || addedFavoriteLoading) {
-    return <Loading />
-  }
-
+  
 
 
   const toggleDrawer = () => {
@@ -67,8 +60,8 @@ const Navbar = () => {
       element: "Home"
     },
     {
-      path: '/allProducts',
-      element: "Shop"
+      path: '/allReviews',
+      element: "Reviews"
     },
     {
       path: '/blogs',
@@ -89,16 +82,16 @@ const Navbar = () => {
   };
 
   // Handle selecting a product from the suggestions
-  const handleSelectProduct = (productId: string) => {
+  const handleSelecTReview = (productId: string) => {
     navigate(`/productDetails/${productId}`);
     setQuery(""); // Clear the search input after selection
   };
 
   // Show suggestions only if there are results
   const filteredProducts = products?.data?.filter((product) =>
-    product.name.toLowerCase().includes(query.toLowerCase())
+    
+    product.author.name.toLowerCase().includes(query.toLowerCase())
   );
-
   const handleLogout = () => {
     dispatch(logout())
     toast.success('Logged Out')
@@ -112,17 +105,7 @@ const Navbar = () => {
     <>
       {/* Desktop Navbar */}
       <div className="sticky top-0 z-40 hidden py-2 bg-white shadow-md lg:block">
-        <div className="container flex items-center justify-between px-6 mx-auto navbar">
-          {/* Logo */}
-          <Link to={"/"} className="flex items-center">
-            <img
-              className="w-[50px] h-[50px] object-cover"
-              src="https://i.ibb.co.com/DPp2Kx4V/pro-logo.png"
-              alt="Logo"
-            />
-            <h1 className="text-2xl font-criticspot">CriticSpot</h1>
-          </Link>
-
+        <div className="container flex items-center justify-between px-10 mx-auto navbar">
           {/* Navigation Items */}
           <div className="flex items-center gap-4 font-bold xl:gap-8">
             {navbarLinks?.map((item, index) => (
@@ -170,7 +153,7 @@ const Navbar = () => {
                         {categories?.data?.slice(0, 12)?.map((category: TCategory) => (
                           <div key={category?._id}>
                             <Link
-                              to={`/allProducts?category=${category?._id}`}
+                              to={`/allReviews?category=${category?._id}`}
                               className="flex items-center gap-2 p-2 rounded-lg transition-all hover:bg-white/20 hover:text-[#fb5770]"
                             >
                               <img
@@ -185,33 +168,24 @@ const Navbar = () => {
                       </div>
                     </div>
 
-                    {/* Shop by Brands Section */}
-                    <div className="mt-4">
-                      <div>
-                        <h2 className="mb-2 text-lg font-bold text-center text-black">
-                          Shop By Brands
-                        </h2>
-                        <hr />
-                      </div>
-                      <div className="grid grid-cols-3 mt-2 xl:grid-cols-4">
-                        {products?.data?.slice(0, 12)?.map((product: TProduct) => (
-                          <div key={product?._id}>
-                            <Link
-                              to={`/allProducts?brand=${product?.brand}`}
-                              className="flex items-center gap-2 p-2 rounded-lg transition-all hover:bg-white/20 hover:text-[#fb5770]"
-                            >
-                              <h2 className="font-medium">{product?.brand}</h2>
-                            </Link>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                 
                   </div>
                 </motion.div>
               )}
             </div>
 
           </div>
+          {/* Logo */}
+          <Link to={"/"} className="flex items-center">
+            <img
+              className="w-[50px] h-[50px] object-cover"
+              src="https://i.ibb.co.com/DPp2Kx4V/pro-logo.png"
+              alt="Logo"
+            />
+            <h1 className="text-2xl font-criticspot">CriticSpot.</h1>
+          </Link>
+
+          
 
 
 
@@ -227,7 +201,7 @@ const Navbar = () => {
                   setSuggestionsVisible(e.target.value.length > 0); // Show suggestions when query is not empty
                 }}
                 placeholder="Search..."
-                className="flex-grow px-4 py-2 w-[200px] border-none outline-none"
+                className="flex-grow px-4 py-2 w-[400px] border-none outline-none"
               />
               <button
                 type="submit"
@@ -244,9 +218,9 @@ const Navbar = () => {
                   <li
                     key={product._id}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-                    onClick={() => handleSelectProduct(product._id)} // Navigate & clear input
+                    onClick={() => handleSelecTReview(product._id)} // Navigate & clear input
                   >
-                    {product.name}
+                    {product.author.name}
                   </li>
                 ))}
               </ul>
@@ -271,29 +245,9 @@ const Navbar = () => {
                       src="https://cdn-icons-png.flaticon.com/512/73/73814.png"
                       alt="Favorite"
                     />
-                    <p className="absolute -top-3 -right-1 bg-[#fb5770] text-white text-sm font-bold p-1 rounded-full w-[20px] h-[20px] flex justify-center items-center">
-                      {addedFavorite?.data?.length > 0 ? `${addedFavorite?.data?.length}`
-                        : '0'}
-                    </p>
+                 
                   </Link>
-                  <Link to={"/addedCards"} className="relative">
-                    <img
-                      className="w-[40px]"
-                      src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
-                      alt="Cart"
-                    />
-
-                    {
-                      (user as TUser)?.email &&
-                      <p className="absolute -top-3 -right-1 bg-[#fb5770] text-white text-sm font-bold p-1 rounded-full w-[20px] h-[20px] flex justify-center items-center">
-                        <p>
-                          {
-                            totalAddedCart > 0 ? `${totalAddedCart}` : '0'
-                          }
-                        </p>
-                      </p>
-                    }
-                  </Link>
+               
 
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
@@ -319,9 +273,9 @@ const Navbar = () => {
                         <button
                           onClick={handleLogout}
                           style={{
-                            borderRadius: "8px",
+                            borderRadius: "12px",
                           }}
-                          className="text-sm font-medium border border-[#fb5770] bg-white text-[#fb5770] hover:border-white hover:bg-[#fb5770] hover:text-white px-4 rounded-lg h-11 focus:outline-none"
+                          className="text-sm font-medium border border-[#fb5770] bg-white text-[#fb5770] hover:border-white hover:bg-[#fb5770] hover:text-white px-2 rounded-lg h-11 focus:outline-none"
                         >
                           Logout
                         </button>
@@ -333,7 +287,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 <Link to="/login">
-                  <OutlineButton text="Login" />
+                  <OutlineButton text="Submit Review" />
                 </Link>
               )
             }
@@ -378,7 +332,7 @@ const Navbar = () => {
                     setSuggestionsVisible(e.target.value.length > 0); // Show suggestions when query is not empty
                   }}
                   placeholder="Search..."
-                  className="flex-grow px-4 py-2 w-[200px] border-none outline-none"
+                  className="flex-grow px-4 py-2 w-[100px] border-none outline-none"
                 />
               </form>
 
@@ -389,9 +343,9 @@ const Navbar = () => {
                     <li
                       key={product._id}
                       className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-                      onClick={() => handleSelectProduct(product._id)} // Navigate & clear input
+                      onClick={() => handleSelecTReview(product._id)} // Navigate & clear input
                     >
-                      {product.name}
+                      {product.author.name}
                     </li>
                   ))}
                 </ul>
@@ -443,10 +397,7 @@ const Navbar = () => {
                       src="https://cdn-icons-png.flaticon.com/512/73/73814.png"
                       alt="Favorite"
                     />
-                    <p className="absolute -top-3 left-4 bg-[#fb5770] text-white text-sm font-bold p-1 rounded-full w-[20px] h-[20px] flex justify-center items-center">
-                      {addedFavorite?.data?.length > 0 ? `${addedFavorite?.data?.length}`
-                        : '0'}
-                    </p>
+               
                   </Link>
                   <Link to={"/addedCards"} onClick={handleNavClick} className="relative">
                     <img
@@ -455,16 +406,7 @@ const Navbar = () => {
                       alt="Cart"
                     />
 
-                    {
-                      (user as TUser)?.email &&
-                      <p className="absolute -top-3 left-6 bg-[#fb5770] text-white text-sm font-bold p-1 rounded-full w-[20px] h-[20px] flex justify-center items-center">
-                        <p>
-                          {
-                            totalAddedCart > 0 ? `${totalAddedCart}` : '0'
-                          }
-                        </p>
-                      </p>
-                    }
+                   
                   </Link>
                   <NavLink
                     to={`/dashboard/${(user as TUser)?.role}/${(user as TUser)?.role}Dashboard`}
@@ -488,7 +430,7 @@ const Navbar = () => {
               ) : (
                 <Link to="/login" onClick={handleNavClick}>
 
-                  <OutlineButton text="Login" />
+                  <OutlineButton text="Submit Review" />
                 </Link>
               )
             }

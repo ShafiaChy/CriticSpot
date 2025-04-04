@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 
 const ProductPagination = ({ totalPage }: { totalPage: number }) => {
     const [searchParams, setSearchParams] = useSearchParams();
-
+console.log(totalPage)
     const currentPageFromURL = Number(searchParams.get("page")) || 1;
     const [currentPage, setCurrentPage] = useState(currentPageFromURL);
 

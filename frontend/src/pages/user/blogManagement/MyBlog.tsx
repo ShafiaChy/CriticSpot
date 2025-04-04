@@ -19,7 +19,7 @@ const MyBlog = () => {
     const { data: currentUser } = useGetAllUserQuery({ email: (user as TUser)?.email })
     const { data: allBlogs , isLoading} = useGetAllBlogQuery(undefined)
     const [deleteBlog] = useDeleteBlogMutation();
-
+console.log(allBlogs,currentUser)
     let myBlogs: TBlog[] = [];
 
     if (currentUser?.data?.length && allBlogs?.data?.length) {

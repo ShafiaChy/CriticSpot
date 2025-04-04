@@ -20,6 +20,8 @@ const persistedAuthReducer = persistReducer(authPersistConfig, authReducer)
 export const store = configureStore({
     reducer: {
         [baseApi.reducerPath]: baseApi.reducer,
+        
+       
         auth: persistedAuthReducer
     },
     middleware: (getDefaultMiddleware) =>
@@ -28,6 +30,7 @@ export const store = configureStore({
                 ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
             },
         }).concat(baseApi.middleware),
+        
 })
 
 export type RootState = ReturnType<typeof store.getState>

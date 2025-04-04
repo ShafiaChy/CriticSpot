@@ -1,4 +1,4 @@
-import BlogCart from "@/components/BlogCart";
+import BlogCard from "@/components/BlogCard";
 import ProductPagination from "@/components/Pagination";
 import { useGetAllBlogQuery } from "@/redux/features/blog/blogManagementApi";
 import { TBlog } from "@/types";
@@ -18,14 +18,14 @@ const BlogsPage = () => {
     ])
     return (
         <div className="px-4 my-8 lg:px-0">
-            <h2 className="font-bold sectionTitle">Latest <span className="primaryColor">Blogs</span></h2>
+            <h2 className="font-bold sectionTitle">The <span className="primaryColor">Latest Articles</span></h2>
             <p className="sectionSubtitle"> Stay updated with our most recent articles and insights!</p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {blogs?.data?.map((blog : TBlog , index) => (
-                    <BlogCart  key={index} blog={blog} />
+                    <BlogCard  key={index} blog={blog} />
                 ))}
             </div>
-            <ProductPagination totalPage={blogs?.meta?.totalPage || 1} />
+            <ProductPagination totalPage={blogs?.meta?.totalPages || 1} />
         </div>
     );
 };

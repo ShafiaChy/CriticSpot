@@ -1,209 +1,105 @@
-import { MdFacebook, MdLocationOn, MdOutlineEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
-import { FaInstagram, FaPhoneAlt, FaWhatsappSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+
+import ImageOne from '../../src/assets/images/ImageOne.jpg'
+import ImageTwo from '../../src/assets/images/ImageTwo.jpg'
+import ImageThree from '../../src/assets/images/ImageThree.jpg'
+import ImageFour from '../../src/assets/images/ImageFour.jpg'
+import ImageFive from '../../src/assets/images/ImageFive.jpg'
+import ImageSix from '../../src/assets/images/ImageSix.jpg'
 
 const Footer = () => {
+    const galleryImages = [
+        { src: ImageOne, alt: "Gallery 1" },
+        { src: ImageTwo, alt: "Gallery 2" },
+        { src: ImageThree, alt: "Gallery 3" },
+        { src: ImageFour, alt: "Gallery 4" },
+        { src: ImageFive , alt: "Gallery 5" },
+        { src: ImageSix, alt: "Gallery 6" },
+      ];
     return (
-        <div className="bg-white border-t border-gray-200 ">
-            <footer className="container py-12 mx-auto ">
-                <div className="container px-4 mx-auto">
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-                        <div className="md:col-span-4">
-                            <div>
-                                <img
-                                    className="w-[120px] h-[60px] object-cover"
-                                    src="https://s3-eu-west-1.amazonaws.com/tpd/logos/615476e378a1a8001de58b7f/0x0.png"
-                                    alt="Logo"
-                                />
-                            </div>
-                            <p className="mt-4 text-gray-600">
-                                Volutpat turpis distinctio voluptatibus, libero viverra risus quisque dictumst. Voluptatem delectus
-                                facilisi, eiusm accusamus euismod ex hac dit magnam rem voluptat.
-                            </p>
-                            <div className="flex gap-4 mt-6">
-                                <Link to="#" style={{ borderRadius: '10px' }} className="bg-[#fb5770] p-2 text-white hover:bg-[#E0465F]">
-                                    <MdFacebook className="w-5 h-5" />
-                                </Link>
-                                <Link to="#" style={{ borderRadius: '10px' }} className="bg-[#fb5770] p-2 text-white hover:bg-[#E0465F]">
-                                    <FaSquareXTwitter className="w-5 h-5" />
-                                </Link>
-                                <Link to="#" style={{ borderRadius: '10px' }} className="bg-[#fb5770] p-2 text-white hover:bg-[#E0465F]">
-                                    <FaInstagram className="w-5 h-5" />
-                                </Link>
-                                <Link to="#" style={{ borderRadius: '10px' }} className="bg-[#fb5770] p-2 text-white hover:bg-[#E0465F]">
-                                    <FaWhatsappSquare className="w-5 h-5" />
-                                </Link>
-                            </div>
-                        </div>
+       // Footer.js
 
-                        {/* Quick Links Section */}
-                        <div className="flex-1 hidden md:col-span-3 md:block">
-                            <h3 className="mb-6 text-lg font-semibold text-gray-900">Quick Links</h3>
-                            <ul className="space-y-4 text-[#3f4343]">
-                                <li>
-                                    <Link to="/about" className="hover:text-[#fb5770]">
-                                        About us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Features
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Meet Our Team
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Our Blog
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
 
-                        {/* Company Overview Section */}
-                        <div className="hidden md:col-span-2 md:block">
-                            <h3 className="mb-6 text-lg font-semibold text-gray-900">Company Location</h3>
-                            <ul className="space-y-4 text-gray-600">
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Company Overview
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Pricing Plan
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Our Partners
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Faq's
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="hover:text-[#fb5770]">
-                                        Our Awards
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="flex justify-between gap-4 md:hidden">
-                            {/* Quick Links Section */}
-                            <div className="flex-1 md:col-span-3">
-                                <h3 className="mb-6 text-lg font-semibold text-gray-900">Quick Links</h3>
-                                <ul className="space-y-4 text-[#3f4343]">
-                                    <li>
-                                        <Link to="/about" className="hover:text-[#fb5770]">
-                                            About us
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Features
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Meet Our Team
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Our Blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Support
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            {/* Company Overview Section */}
-                            <div className="md:col-span-2">
-                                <h3 className="mb-6 text-lg font-semibold text-gray-900">Company Location</h3>
-                                <ul className="space-y-4 text-gray-600">
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Company Overview
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Pricing Plan
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Our Partners
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Faq's
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:text-[#fb5770]">
-                                            Our Awards
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Contact Information Section */}
-                        <div className="md:col-span-3">
-                            <h3 className="mb-6 text-lg font-semibold text-gray-900">Contact Information</h3>
-                            <p className="mb-4 text-gray-600">
-                                Lacus deleniti dolorum necessitatibus lacus, esse in magnam saepe, cubilia.
-                            </p>
-                            <div className="space-y-4 text-gray-600">
-                                <p className="flex items-center gap-2">
-                                    <span className="text-[#fb5770]"><FaPhoneAlt /></span>
-                                    (+786) 456-99800, (+234) 456-879
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <span className="text-[#fb5770]"><MdOutlineEmail /></span>
-                                    info.shop@domain.com
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <span className="text-[#fb5770]"><MdLocationOn /></span>
-                                    27 NW New street, 3 No Vexon City
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Copyright Section */}
-                    <div className="flex flex-col items-center justify-between pt-8 mt-12 border-t border-gray-200 md:flex-row">
-                        <p className="text-gray-600">
-                            Copyright &copy; 2025 <span className="font-semibold">Stationery Shop</span>. All rights reserved
-                        </p>
-                        <Link to="#" className="mt-4 text-gray-600 hover:text-[#fb5770] md:mt-0">
-                            Privacy Policy
-                        </Link>
-                    </div>
-                </div>
-            </footer>
+    <footer className=" text-blackpy-10 px-5 mt-16">
+      <div className="flex flex-wrap justify-between gap-10">
+        {/* Logo & Description */}
+        <div className="max-w-xs">
+          <h1 className="text-2xl font-bold mb-3">CriticSpot</h1>
+          <p className="text-sm mb-5 leading-relaxed">
+            Proin a interdum elit. Etiam eu sapien sem. Suspendisse a massa justo.
+            Cras eget lorem nunc. Fusce nec urna tempus tempus.
+          </p>
+          {/* Social Icons */}
+          <div className="flex space-x-4">
+            <a href="#" aria-label="Instagram" className="hover:text-red-500">
+              <i className="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="#" aria-label="Facebook" className="hover:text-red-500">
+              <i className="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" aria-label="YouTube" className="hover:text-red-500">
+              <i className="fab fa-youtube text-lg"></i>
+            </a>
+            <a href="#" aria-label="Twitter" className="hover:text-red-500">
+              <i className="fab fa-twitter text-lg"></i>
+            </a>
+          </div>
         </div>
 
-    );
-};
+        {/* Useful Links */}
+        <div className="flex flex-col space-y-5">
+          <h3 className="font-semibold text-lg">Useful Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-red-500">History</a></li>
+            <li><a href="#" className="hover:text-red-500">Our Team</a></li>
+            <li><a href="#" className="hover:text-red-500">Privacy Policy</a></li>
+            <li><a href="#" className="hover:text-red-500">Services Offered</a></li>
+            <li><a href="#" className="hover:text-red-500">Product Catalog</a></li>
+          </ul>
+        </div>
+
+        {/* Information */}
+        <div className="flex flex-col space-y-5">
+          <h3 className="font-semibold text-lg">Information</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-red-500">FAQ/Return</a></li>
+            <li><a href="#" className="hover:text-red-500">Privacy/Terms</a></li>
+            <li><a href="#" className="hover:text-red-500">Affiliate</a></li>
+            <li><a href="#" className="hover:text-red-500">Sizing Guide</a></li>
+            <li><a href="#" className="hover:text-red-500">Accessibility</a></li>
+          </ul>
+        </div>
+
+        {/* Support */}
+        <div className="flex flex-col space-y-5">
+          <h3 className="font-semibold text-lg">Support</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-red-500">Your Account</a></li>
+            <li><a href="#" className="hover:text-red-500">Press Release</a></li>
+            <li><a href="#" className="hover:text-red-500">Return Centre</a></li>
+            <li><a href="#" className="hover:text-red-500">App Download</a></li>
+            <li><a href="#" className="hover:text-red-500">Advertisements</a></li>
+          </ul>
+        </div>
+
+        {/* Gallery */}
+        <div className="max-w-xs">
+          <h3 className="font-semibold text-lg mb-5">Follow @Instagram</h3>
+          <div className="grid grid-cols-3 gap-2">
+            {galleryImages.map((image, index) => (
+              <img
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-24 object-cover rounded-md"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+
 
 export default Footer;

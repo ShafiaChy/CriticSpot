@@ -1,5 +1,5 @@
-// import { useGetAllProductsQuery } from "@/redux/features/product/productManagementApi";
-// import { TProduct } from "@/types";
+// import { useGetAllProductsQuery } from "@/redux/features/product/reviewManagementApi";
+// import { TReview } from "@/types";
 // import { Link } from "react-router-dom";
 // import Skeleton from 'react-loading-skeleton'
 // import 'react-loading-skeleton/dist/skeleton.css'
@@ -10,7 +10,7 @@
 
 // const AboutUs = () => {
 //     const { data: products, isLoading } = useGetAllProductsQuery(undefined)
-//     const writingProducts = products?.data?.filter((product: TProduct) => product?.category?.name === 'Writing')
+//     const writingProducts = products?.data?.filter((product: TReview) => product?.category?.name === 'Writing')
 //     const { data: categories } = useGetAllCategoryQuery(undefined)
 //     const writing = categories?.data?.find((item: any) => item?.name === "Writing")
 //     useEffect(() => {
@@ -62,7 +62,7 @@
 //                                 </div>
 //                             ))
 //                             :
-//                             writingProducts?.slice(0, 8)?.map((product: TProduct) => (
+//                             writingProducts?.slice(0, 8)?.map((product: TReview) => (
 //                                 <div key={product?._id} className="bg-white border shadow rounded-xl" data-aos="zoom-in-up">
 //                                     <img className="lg:h-[200px] h-[150px] w-full object-cover rounded-t-xl" src={product?.image} alt="" />
 //                                     <div className="p-2 lg:p-4">
@@ -113,7 +113,7 @@ const AboutUs= () => {
         </div>
 
         {/* Right Section - Why Trust Our Reviews? */}
-        <div className="bg-gradient-to-b from-gray-900 to-black text-white p-10 flex flex-col justify-center space-y-8 min-h-[700px]">
+        <div className="bg-black text-white p-10 flex flex-col justify-center space-y-8 min-h-[700px]">
           <h2 className="text-3xl font-bold text-center mb-4">Why Trust Our Reviews?</h2>
           
           <FeatureItem

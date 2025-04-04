@@ -24,7 +24,7 @@ const Login = () => {
         register,
         handleSubmit,
         formState: { errors },
-        setValue
+       
     } = form;
 
     const from = location.state?.from?.pathname || "/";
@@ -53,16 +53,7 @@ const Login = () => {
         }
     };
 
-    const handleAdminLogin = () => {
-        setValue("email", "badhon.roy@gmail.com");
-        setValue("password", "123456");
-        form.handleSubmit(onSubmit)();
-    }
-    const handleUserLogin = () => {
-        setValue("email", "user@gmail.com");
-        setValue("password", "123456");
-        form.handleSubmit(onSubmit)();
-    }
+   
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -138,8 +129,8 @@ const Login = () => {
                     </button>
 
                 </form>
-                <p className="mt-2 text-sm text-end">Don't have an account <Link className="font-medium text-[#e14b63] underline" to='/signUp'>Sing Up</Link></p>
-                <div className="flex justify-between gap-6 my-4">
+                <p className="mt-2 text-sm text-end">Don't have an account? <Link className="font-medium text-[#e14b63] underline" to='/signUp'>Sign Up</Link></p>
+                {/* <div className="flex justify-between gap-6 my-4">
                     <button
                         onClick={handleAdminLogin}
                         type="submit"
@@ -154,7 +145,7 @@ const Login = () => {
                     >
                         As a User
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -19,25 +19,19 @@ const Dashboard = () => {
     user = verifyToken(token);
   }
 
-  const adminPaths = [
-    { path: `/dashboard/${role}/adminDashboard`, element: "Dashboard" },
-    { path: `/dashboard/${role}/createProduct`, element: "Create Product" },
-    { path: `/dashboard/${role}/getAllProducts`, element: "All Products" },
-    { path: `/dashboard/${role}/allOrders`, element: "All Orders" },
-    { path: `/dashboard/${role}/allUser`, element: "All Users" },
-    { path: `/`, element: "Home" },
-  ];
+  
 
   const userPaths = [
     { path: `/dashboard/${role}/userDashboard`, element: "Dashboard" },
-    { path: `/dashboard/${role}/viewOrders`, element: "View Orders" },
+
     { path: `/dashboard/${role}/createBlog`, element: "Create Blog" },
+    { path: `/dashboard/${role}/CreateReview`, element: "Create Product" },
     { path: `/dashboard/${role}/myBlog`, element: "My Blog" },
     { path: `/dashboard/${role}/userProfile`, element: "Profile" },
     { path: `/`, element: "Home" },
   ];
 
-  const paths = (user as TUser)?.role === "admin" ? adminPaths : userPaths;
+  const paths:any = (user as TUser)?.role === "user" && userPaths;
 
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -58,7 +52,7 @@ const Dashboard = () => {
             </button>
           </div>
           <nav className="flex flex-col space-y-2">
-            {paths.map((item, index) => (
+            { paths?.map((item:any, index:any) => (
               <NavLink
                 key={index}
                 to={item.path}

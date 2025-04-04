@@ -35,7 +35,7 @@ const Loading = () => {
 
         {/* Loading Text */}
         <p className="text-[#fb5770] font-semibold text-lg animate-pulse">
-          Loading your stationery...
+          Loading your Review...
         </p>
       </div>
     </div>

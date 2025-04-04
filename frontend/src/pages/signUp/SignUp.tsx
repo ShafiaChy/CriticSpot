@@ -6,7 +6,7 @@ import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
-
+import imageOne from '../../assets/images/homeOne.jpg'
 
 const SignUp = () => {
     const dispatch = useAppDispatch()
@@ -25,7 +25,7 @@ const SignUp = () => {
         try {
             const userInfo = {
                 name: data?.name,
-                photoUrl: data?.photoUrl || 'https://img.freepik.com/premium-photo/man-with-beard-mustache-is-looking-camera_1291785-261.jpg?ga=GA1.1.1520422090.1699525632&semt=ais_hybrid',
+                photoUrl: data?.photoUrl || imageOne,
                 email: data?.email,
                 password: data?.password
               }
@@ -76,28 +76,7 @@ const SignUp = () => {
                             </p>
                         )}
                     </div>
-                    {/* PhotoURL Field */}
-                    <div className="mb-4">
-                        <label
-                            htmlFor="photoUrl"
-                            className="block mb-2 text-sm font-medium text-gray-700"
-                        >
-                            Photo URL
-                        </label>
-                        <input
-                            id="photoUrl"
-                            type="text"
-                            placeholder="Enter photo url"
-                            {...register("photoUrl")}
-                            className={`w-full px-4 py-2 border ${errors.photoUrl ? "border-red-500" : "border-gray-300"
-                                } rounded-lg focus:ring-2 focus:ring-[#fb5770] focus:outline-none`}
-                        />
-                        {errors.photoUrl && (
-                            <p className="mt-1 text-sm text-red-500">
-                                {errors.photoUrl.message}
-                            </p>
-                        )}
-                    </div>
+                 
                     {/* Email Field */}
                     <div className="mb-4">
                         <label

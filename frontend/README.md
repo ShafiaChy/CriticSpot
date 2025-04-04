@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# 🛍️ Product Review Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application where users can **review products**, **read and manage blogs**, **sign up**, **log in**, and enjoy features like **filtering** and **pagination**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 User Authentication (Sign up / Log in)
+- 📝 Blog Management (Create, Read, Update, Delete)
+- 🌟 Product Reviews with Ratings
+- 🔍 Search & Filter Products
+- 📄 Pagination for Smooth Browsing
+- ✨ Clean UI with TailwindCSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🧑‍💻 Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+### Frontend:
+- ⚛️ React
+- 🎯 TypeScript
+- 📦 Redux Toolkit
+- 🎨 TailwindCSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Backend:
+- 🟢 Node.js
+- 🚂 Express.js
+- 🍃 MongoDB with Mongoose
+- 🔐 JWT Authentication
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### ✅ Prerequisites
+
+Make sure you have:
+
+- Node.js installed
+- MongoDB running locally or using a MongoDB Atlas connection string
+
+---
+
+## 🖥️ Local Development
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
