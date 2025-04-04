@@ -25,7 +25,7 @@ const Dashboard = () => {
     { path: `/dashboard/${role}/userDashboard`, element: "Dashboard" },
 
     { path: `/dashboard/${role}/createBlog`, element: "Create Blog" },
-    { path: `/dashboard/${role}/CreateReview`, element: "Create Product" },
+    { path: `/dashboard/${role}/CreateReview`, element: "Create Review" },
     { path: `/dashboard/${role}/myBlog`, element: "My Blog" },
     { path: `/dashboard/${role}/userProfile`, element: "Profile" },
     { path: `/`, element: "Home" },

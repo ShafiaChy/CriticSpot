@@ -24,7 +24,7 @@ const PopularReviews= () => {
   
     console.log(topReviews)
     const latestPost = topReviews?.reduce((latest, current) => {
-      return new Date(current.publishedDate) > new Date(latest.publishedDate) ? current : latest;
+      return new Date(current.createdAt) > new Date(latest.createdAt) ? current : latest;
     });
     const isMiddle = false;
     console.log(latestPost)
@@ -45,7 +45,7 @@ const PopularReviews= () => {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 ">
         {/* Left Column */}
         <div className="flex flex-col gap-6 md:col-span-1">
-          {topReviews?.slice(2, 4)?.map((article, index) => (
+          {topReviews?.slice(1, 3)?.map((article, index) => (
             <ArticleCard key={index} isMiddle={isMiddle} article={article}  />
           ))}
         </div>
@@ -61,7 +61,7 @@ const PopularReviews= () => {
       
        
         <div className="flex flex-col gap-6 md:col-span-1">
-          {topReviews?.slice(4, 6).map((article, index) => (
+          {topReviews?.slice(3, 6).map((article, index) => (
             <ArticleCard key={index} article={article} isMiddle={isMiddle} />
           ))}
         </div>

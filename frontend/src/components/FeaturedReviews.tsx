@@ -21,7 +21,7 @@ const FeaturedReviews= () => {
       {/* Main Blog Post */}
       {
         ProductReviews?.data?.length && <Link to={`/reviewDetails/${ProductReviews?.data[0]?._id}`}><div className="md:col-span-2 bg-white shadow-lg rounded-lg overflow-hidden">
-       <img src={ProductReviews?.data[0]?.featuredImage} alt={ProductReviews?.data[0]?.title} className="w-full h-5/6 object-cover" />
+       <img src={ProductReviews?.data[0]?.featuredImage} alt={ProductReviews?.data[0]?.title} className="w-full h-96 object-cover" />
         <div className="p-5">
           <span className={`text-xs font-semibold px-2 py-1 rounded `}>
             {ProductReviews?.data[0]?.category?.name}
@@ -47,7 +47,7 @@ const FeaturedReviews= () => {
               </span>
               <h2 className="text-lg font-semibold text-gray-800 mt-2">{review.title}</h2>
               <div className="text-gray-500 text-sm mt-2">
-                <span>{review.publishedDate}</span> •
+                <span>{review.content.slice(0,125)}</span> 
               </div>
             </div>
           </div>
